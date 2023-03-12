@@ -13,7 +13,8 @@ public:
     Rectangle(double base, double height) : base(base), height(height) {
         std::cout << "Rectangle constructor called" << std::endl;
     }
-
+    // Rctangle class must implement the area() method, if not overridden then Rectangle will also be abstract class
+    // You can't create an instance of abstract class
     double area() override {
         return base * height;
     }
@@ -28,6 +29,7 @@ public:
         std::cout << "Triangle constructor called" << std::endl;
     }
 
+//     Triangle class must implement the area() method if not overridden then Trianle will also be abstract class
     double area() override {
         return 0.5 * base * height;
     }
